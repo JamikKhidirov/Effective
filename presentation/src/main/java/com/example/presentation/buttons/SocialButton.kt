@@ -26,9 +26,10 @@ import com.example.presentation.buttons.state.SocialButtonState
 
 
 @Composable
+@Preview(showBackground = true)
 fun SocialButton(
     modifier: Modifier = Modifier,
-    buttonState: SocialButtonState = SocialButtonState.VK,
+    buttonState: SocialButtonState = SocialButtonState.ODNOKLASSNIKS,
     onClickButton: () -> Unit = {}
 ){
     val state by remember(buttonState){
@@ -37,17 +38,24 @@ fun SocialButton(
 
     when (state) {
         SocialButtonState.VK -> {
-
+            SocBtn(
+                modifier = modifier,
+                socialButtonState = state,
+                onClick = onClickButton
+            )
         }
         SocialButtonState.ODNOKLASSNIKS -> {
-
+            SocBtn(
+                modifier = modifier,
+                socialButtonState = state,
+                onClick = onClickButton
+            )
         }
     }
 }
 
 
 @Composable
-@Preview(showBackground = true)
 fun SocBtn(
     modifier: Modifier = Modifier,
     socialButtonState: SocialButtonState = SocialButtonState.VK,
