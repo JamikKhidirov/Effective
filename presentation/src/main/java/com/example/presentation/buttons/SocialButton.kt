@@ -1,6 +1,7 @@
 package com.example.presentation.buttons
 
 import android.annotation.SuppressLint
+import android.text.Layout
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -76,11 +77,13 @@ fun SocBtn(
     ) {
         Row(
             modifier = Modifier.fillMaxWidth(),
-            verticalAlignment = Alignment.CenterVertically,
+            verticalAlignment = CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
             Icon(
-                painter = if (state == SocialButtonState.VK) painterResource(R.drawable.vk) else painterResource(R.drawable.odnoklass),
+                painter = if (state == SocialButtonState.VK)
+                    painterResource(R.drawable.vk)
+                else painterResource(R.drawable.odnoklass),
                 contentDescription = null
             )
         }

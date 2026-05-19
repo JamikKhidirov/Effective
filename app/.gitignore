@@ -1,1 +1,23 @@
-/build
+# =========================================================================
+# Настройки Android Studio / IntelliJ IDEA
+# =========================================================================
+
+# Игнорируем всю папку .idea целиком по умолчанию
+.idea/
+
+# НО возвращаем (разрешаем) общие настройки проекта, если они появятся:
+!.idea/codeStyles/
+!.idea/runConfigurations/
+!.idea/vcs.xml
+!.idea/copyright/
+
+# Игнорируем локальные файлы разработчика (даже внутри разрешенных папок)
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Игнорируем файлы модулей самого Android Studio
+*.iml
+.modules/
