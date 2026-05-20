@@ -37,7 +37,9 @@ fun AuthTextFild(
             unfocusedContainerColor = Color(0xFF32333A),
             focusedContainerColor = Color(0xFF32333A),
             focusedIndicatorColor = Color.Transparent,
-            unfocusedIndicatorColor = Color.Transparent
+            unfocusedIndicatorColor = Color.Transparent,
+            focusedTextColor = Color.White,
+            unfocusedTextColor = Color.White
         ),
         singleLine = true,
         placeholder = {
